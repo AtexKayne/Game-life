@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-life</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <section class="section">
+        <div id="app" class="game-life">
+            <canvas id="canvas" class="game-life__canvas"></canvas>
+
+            <svg id="svg" class="game-life__svg" width="0" height="0">
+                <pattern id="pattern" x="0" y="0" width="0" height="0" patternUnits="userSpaceOnUse" >
+                    <rect id="pattern-rect" x="0" y="0" width="0" height="0" style="stroke: #fff; fill: none"/>
+                </pattern>
+                
+                <rect id="filler" x="0" y="0" width="0" height="0" style="stroke: #fff; fill: url(#pattern);"/>   
+            </svg>
+
+            <button id="toggleBtn" class="btn btn--primary game-life__btn">Start</button>
+        </div>
+    </section>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

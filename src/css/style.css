@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-font: #333;
+    --color-canvas: #000;
+    --color-active: brown;
+    --color-primary: #28a745;
+    --color-background: #2c3e50;
+    --color-border: rgba(189, 207, 194, 0.4);
+}
+
+html {
+    font-size: 1.2em;
+    color: var(--color-font);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+}
+
+.section {
+    padding: 20px;
+}
+
+.game-life {
+    position: relative;
+}
+
+.game-life__canvas {
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: var(--color-canvas);
+}
+
+.game-life__svg {
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+}
+
+.game-life__btn {
+    margin-top: 20px;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    min-width: 120px;
+    user-select: none;
+    padding: 6px 14px;
+    border-radius: 3px;
+    transition: .3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.btn:hover {
+    box-shadow: inset 3px 3px 5px rgba(0,0,0,.2);
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+}
+
+.btn--active {
+    background-color: var(--color-active);
+}
